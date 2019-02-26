@@ -15,14 +15,6 @@ class testXueqiu(unittest.TestCase):
         caps["appActivity"] = ".view.WelcomeActivityAlias"
         caps["autoGrantPermissions"] = "true"
         caps["automationName"] = "UiAutomator2"
-        # caps = {
-        #     "platformName" : "android",
-        #     "deviceName" : "demo",
-        #     "appPackage" : "com.xueqiu.android",
-        #     "appActivity" : ".view.WelcomeActivityAlias",
-        #     "autoGrantPermissions" : "true",
-        #     "automationName" : "UiAutomator2"
-        # }
 
         self.driver = webdriver.Remote("http://localhost:4723/wd/hub", caps)
         self.driver.implicitly_wait(10)
@@ -35,8 +27,23 @@ class testXueqiu(unittest.TestCase):
             self.driver.find_element_by_xpath("//*[@text='下次再说']").click()
 
     def test_pdd_exist(self):
-        print("testcase 2")
         self.driver.find_element_by_xpath(
             "//*[@text='自选' and contains(@resource-id, 'tab_name')]").click()
-        zixuanText = self.driver.find_element_by_id("com.xueqiu.android:id/portfolio_stockName").text
-        assert zixuanText == "拼多多"
+        elText = self.driver.find_element_by_id("com.xueqiu.android:id/portfolio_stockName")
+        assert elText.text == "拼多多"
+
+    def test_search_add(self):
+        self.driver.find_element_by_xpath(
+            "//*[@text='自选' and contains(@resource-id, 'tab_name')]").click()
+        self.driver.find_element_by_id(
+            "com.xueqiu.android:id/action_create_cube").click()
+        self.driver.find_element_by_id(
+            "com.xueqiu.android:id/search_input_text").send_keys("alibaba")
+        self.driver.find_element_by_id("com.xueqiu.android:id/follow_btn")
+        self.driver.find_element_by_id("com.xueqiu.android:id/follow_btn").click()
+        # self.driver.find_element_by_xpath("//*[@text='下次再说']").click()
+        self.driver.find_element_by_id("com.xueqiu.android:id/action_close").click()
+        elText = self.driver.find_element_by_id("com.xueqiu.android:id/portfolio_stockName")
+        assert elText.text == "阿里巴巴"
+
+
