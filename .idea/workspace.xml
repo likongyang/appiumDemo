@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="82243848-b83c-4a3d-b0be-db1b366f35a9" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/src/test_xueqiu.py" afterPath="$PROJECT_DIR$/src/test_xueqiu.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -16,8 +17,8 @@
       <file leaf-file-name="test_xueqiu.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test_xueqiu.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="49">
-              <caret line="5" column="0" lean-forward="true" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+            <state relative-caret-position="708">
+              <caret line="46" column="36" lean-forward="true" selection-start-line="46" selection-start-column="36" selection-end-line="46" selection-end-column="36" />
               <folding>
                 <element signature="e#21#49#0" expanded="true" />
               </folding>
@@ -74,6 +75,11 @@
               <item name="pythonAppiumDemo24" type="b2602c69:ProjectViewProjectNode" />
               <item name="pythonAppiumDemo24" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="pythonAppiumDemo24" type="b2602c69:ProjectViewProjectNode" />
+              <item name="pythonAppiumDemo24" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -95,8 +101,8 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python tests.py.test in test_xueqiu.py">
-    <configuration name="py.test for test_xueqiu.testXueqiu.test_pdd_exist" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Python tests.py.test for test_xueqiu.testXueqiu.test_search_add">
+    <configuration name="py.test for test_xueqiu.testXueqiu.test_search_add" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs />
@@ -108,7 +114,7 @@
       <module name="pythonAppiumDemo24" />
       <option name="_new_keywords" value="&quot;&quot;" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test_xueqiu.testXueqiu.test_pdd_exist&quot;" />
+      <option name="_new_target" value="&quot;test_xueqiu.testXueqiu.test_search_add&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
     </configuration>
     <configuration name="py.test in test_xueqiu.py" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
@@ -128,12 +134,12 @@
     </configuration>
     <list size="2">
       <item index="0" class="java.lang.String" itemvalue="Python tests.py.test in test_xueqiu.py" />
-      <item index="1" class="java.lang.String" itemvalue="Python tests.py.test for test_xueqiu.testXueqiu.test_pdd_exist" />
+      <item index="1" class="java.lang.String" itemvalue="Python tests.py.test for test_xueqiu.testXueqiu.test_search_add" />
     </list>
     <recent_temporary>
       <list size="2">
-        <item index="0" class="java.lang.String" itemvalue="Python tests.py.test in test_xueqiu.py" />
-        <item index="1" class="java.lang.String" itemvalue="Python tests.py.test for test_xueqiu.testXueqiu.test_pdd_exist" />
+        <item index="0" class="java.lang.String" itemvalue="Python tests.py.test for test_xueqiu.testXueqiu.test_search_add" />
+        <item index="1" class="java.lang.String" itemvalue="Python tests.py.test in test_xueqiu.py" />
       </list>
     </recent_temporary>
   </component>
@@ -154,48 +160,48 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="py_test_for_test_xueqiu_testXueqiu_test_pdd_exist - 2019.02.26 at 13h 46m 12s.xml">
-      <configuration name="py.test for test_xueqiu.testXueqiu.test_pdd_exist" configurationId="tests" />
+    <history-entry file="py_test_for_test_xueqiu_testXueqiu_test_search_add - 2019.02.26 at 15h 03m 16s.xml">
+      <configuration name="py.test for test_xueqiu.testXueqiu.test_search_add" configurationId="tests" />
     </history-entry>
-    <history-entry file="py_test_in_test_xueqiu_py - 2019.02.26 at 11h 33m 32s.xml">
+    <history-entry file="py_test_for_test_xueqiu_testXueqiu_test_search_add - 2019.02.26 at 15h 22m 49s.xml">
+      <configuration name="py.test for test_xueqiu.testXueqiu.test_search_add" configurationId="tests" />
+    </history-entry>
+    <history-entry file="py_test_for_test_xueqiu_testXueqiu_test_search_add - 2019.02.26 at 15h 42m 41s.xml">
+      <configuration name="py.test for test_xueqiu.testXueqiu.test_search_add" configurationId="tests" />
+    </history-entry>
+    <history-entry file="py_test_for_test_xueqiu_testXueqiu_test_search_add - 2019.02.26 at 15h 44m 17s.xml">
+      <configuration name="py.test for test_xueqiu.testXueqiu.test_search_add" configurationId="tests" />
+    </history-entry>
+    <history-entry file="py_test_in_test_xueqiu_py - 2019.02.26 at 15h 05m 45s.xml">
       <configuration name="py.test in test_xueqiu.py" configurationId="tests" />
     </history-entry>
-    <history-entry file="py_test_in_test_xueqiu_py - 2019.02.26 at 13h 16m 05s.xml">
+    <history-entry file="py_test_in_test_xueqiu_py - 2019.02.26 at 15h 13m 30s.xml">
       <configuration name="py.test in test_xueqiu.py" configurationId="tests" />
     </history-entry>
-    <history-entry file="py_test_in_test_xueqiu_py - 2019.02.26 at 13h 17m 48s.xml">
+    <history-entry file="py_test_in_test_xueqiu_py - 2019.02.26 at 15h 28m 37s.xml">
       <configuration name="py.test in test_xueqiu.py" configurationId="tests" />
     </history-entry>
-    <history-entry file="py_test_in_test_xueqiu_py - 2019.02.26 at 13h 22m 50s.xml">
+    <history-entry file="py_test_in_test_xueqiu_py - 2019.02.26 at 15h 32m 14s.xml">
       <configuration name="py.test in test_xueqiu.py" configurationId="tests" />
     </history-entry>
-    <history-entry file="py_test_in_test_xueqiu_py - 2019.02.26 at 13h 26m 52s.xml">
+    <history-entry file="py_test_in_test_xueqiu_py - 2019.02.26 at 15h 38m 22s.xml">
       <configuration name="py.test in test_xueqiu.py" configurationId="tests" />
     </history-entry>
-    <history-entry file="py_test_in_test_xueqiu_py - 2019.02.26 at 13h 41m 17s.xml">
-      <configuration name="py.test in test_xueqiu.py" configurationId="tests" />
-    </history-entry>
-    <history-entry file="py_test_in_test_xueqiu_py - 2019.02.26 at 13h 42m 45s.xml">
-      <configuration name="py.test in test_xueqiu.py" configurationId="tests" />
-    </history-entry>
-    <history-entry file="py_test_in_test_xueqiu_py - 2019.02.26 at 13h 44m 26s.xml">
-      <configuration name="py.test in test_xueqiu.py" configurationId="tests" />
-    </history-entry>
-    <history-entry file="py_test_in_test_xueqiu_py - 2019.02.26 at 13h 48m 09s.xml">
+    <history-entry file="py_test_in_test_xueqiu_py - 2019.02.26 at 15h 42m 01s.xml">
       <configuration name="py.test in test_xueqiu.py" configurationId="tests" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
     <frame x="960" y="0" width="960" height="1040" extended-state="0" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2494577" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2494577" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32893288" sideWeight="0.5043384" order="-1" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32893288" sideWeight="0.49566162" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32048458" sideWeight="0.49566162" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32929516" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32048458" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -215,10 +221,18 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/selenium/webdriver/remote/webdriver.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="193">
+          <caret line="361" column="8" lean-forward="false" selection-start-line="361" selection-start-column="8" selection-end-line="361" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/test_xueqiu.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="49">
-          <caret line="5" column="0" lean-forward="true" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+        <state relative-caret-position="708">
+          <caret line="46" column="36" lean-forward="true" selection-start-line="46" selection-start-column="36" selection-end-line="46" selection-end-column="36" />
           <folding>
             <element signature="e#21#49#0" expanded="true" />
           </folding>
