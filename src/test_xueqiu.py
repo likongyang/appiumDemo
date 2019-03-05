@@ -20,7 +20,7 @@ class testXueqiu(unittest.TestCase):
         # if load == True:
         #     caps["noReset"] = "true"
         self.driver = webdriver.Remote("http://localhost:4723/wd/hub", caps)
-        self.driver.implicitly_wait(15)
+        self.driver.implicitly_wait(10)
         load = True
 
     def loaded(self):
@@ -66,26 +66,35 @@ class testXueqiu(unittest.TestCase):
 
 
     # 封装一个滚动方法，swipe(item, director) return element
-    def swipe(self, item, director):
+    def swipe_new(self, item, director):
+        print(self.driver.get_window_size())
+        width = self.driver.get_window_size()['width']
+        height = self.driver.get_window_size()['height']
         if director == "up":
-            pass
+            while len(self.driver.find_elements(item['by'], item['value'])) < 1:
+                self.driver.swipe(width / 2, height * 3/4, width / 2, height / 4, 1000)
+            return self.driver.find_element(item['by'], item['value'])
+
         elif director == "down":
-            pass
+            while len(self.driver.find_elements(item['by'], item['value'])) < 1:
+                self.driver.swipe(width / 2, height / 4, width / 2, height * 3/4, 1000)
+            return self.driver.find_element(item['by'], item['value'])
+
+
         elif director == "left":
-            pass
+            while len(self.driver.find_elements(item['by'], item['value'])) < 1:
+                self.driver.swipe(width * 9/10, height / 2, width / 10, height / 2, 1000)
+            return self.driver.find_element(item['by'], item['value'])
+
         else:
-            pass
-
-        return item
-        # el = self.driver.find_element(by, director)
-        # actions = TouchAction(self.driver)
-        # actions.tap_and_hold(el)
-        # actions.move_to(50, 50).perform()
-        # return self
-
+            while len(self.driver.find_elements(item['by'], item['value'])) < 1:
+                self.driver.swipe(width / 4, height / 2, width * 3/4, height / 2, 1000)
+            return self.driver.find_element(item['by'], item['value'])
 
     # 交易 -> 基金 -> 已有蛋卷基金账户登录 -> 使用密码登陆 -> 输入用户名密码 -> 登录
     def test_sign_in(self):
+        item = {"by":"xpath", "value":"//*[contains(@text, '铁公鸡金融')]"}
+        self.swipe_new(item, 'left')
         self.phoneNumber = 13512345678
         self.driver.find_element_by_xpath("//*[@text='交易' and contains(@resource-id, 'tab_name')]").click()
         self.driver.find_element_by_accessibility_id("15da75b0b27c24f3fee84026").click()
@@ -95,7 +104,7 @@ class testXueqiu(unittest.TestCase):
         self.driver.find_element_by_xpath("//*[contains(@content-desc, '登录密码')]/following-sibling::android.widget.EditText").send_keys("123456")
         self.driver.find_element_by_xpath("//*[contains(@content-desc, '登录密码')]/following-sibling::android.widget.EditText").click()
         self.driver.find_element_by_accessibility_id("安全登录").click()
-        assert 1 == self.driver.find_elements_by_xpath("//*[contains(@text, '有误')]")
+        assert 1 == len(self.driver.find_elements_by_xpath("//*[contains(@text, '错误')]"))
 
 
 

@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="82243848-b83c-4a3d-b0be-db1b366f35a9" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/test_popMenu.py" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/src/test_xueqiu.py" afterPath="$PROJECT_DIR$/src/test_xueqiu.py" />
     </list>
@@ -21,11 +20,31 @@
       <file leaf-file-name="test_xueqiu.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test_xueqiu.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="314">
-              <caret line="78" column="19" lean-forward="true" selection-start-line="78" selection-start-column="19" selection-end-line="78" selection-end-column="19" />
+            <state relative-caret-position="361">
+              <caret line="94" column="27" lean-forward="true" selection-start-line="94" selection-start-column="27" selection-end-line="94" selection-end-column="27" />
               <folding>
                 <element signature="e#21#49#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="webdriver.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/appium/webdriver/webdriver.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="17">
+              <caret line="220" column="8" lean-forward="false" selection-start-line="220" selection-start-column="8" selection-end-line="220" selection-end-column="8" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="webdriver.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/selenium/webdriver/remote/webdriver.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="196">
+              <caret line="1096" column="8" lean-forward="false" selection-start-line="1096" selection-start-column="8" selection-end-line="1096" selection-end-column="8" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -214,48 +233,49 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="py_test_for_test_xueqiu_testXueqiu_test_sign_in - 2019.03.05 at 12h 16m 54s.xml">
-      <configuration name="py.test for test_xueqiu.testXueqiu.test_sign_in" configurationId="tests" />
-    </history-entry>
-    <history-entry file="py_test_for_test_xueqiu_testXueqiu_test_sign_in - 2019.03.05 at 14h 50m 21s.xml">
-      <configuration name="py.test for test_xueqiu.testXueqiu.test_sign_in" configurationId="tests" />
-    </history-entry>
-    <history-entry file="py_test_for_test_xueqiu_testXueqiu_test_sign_in - 2019.03.05 at 14h 51m 37s.xml">
-      <configuration name="py.test for test_xueqiu.testXueqiu.test_sign_in" configurationId="tests" />
-    </history-entry>
-    <history-entry file="py_test_for_test_xueqiu_testXueqiu_test_sign_in - 2019.03.05 at 15h 24m 29s.xml">
-      <configuration name="py.test for test_xueqiu.testXueqiu.test_sign_in" configurationId="tests" />
-    </history-entry>
-    <history-entry file="py_test_for_test_xueqiu_testXueqiu_test_sign_in - 2019.03.05 at 15h 25m 54s.xml">
-      <configuration name="py.test for test_xueqiu.testXueqiu.test_sign_in" configurationId="tests" />
-    </history-entry>
-    <history-entry file="py_test_for_test_xueqiu_testXueqiu_test_sign_in - 2019.03.05 at 15h 30m 21s.xml">
-      <configuration name="py.test for test_xueqiu.testXueqiu.test_sign_in" configurationId="tests" />
-    </history-entry>
-    <history-entry file="py_test_for_test_xueqiu_testXueqiu_test_sign_in - 2019.03.05 at 15h 32m 59s.xml">
-      <configuration name="py.test for test_xueqiu.testXueqiu.test_sign_in" configurationId="tests" />
-    </history-entry>
-    <history-entry file="py_test_for_test_xueqiu_testXueqiu_test_sign_in - 2019.03.05 at 15h 34m 51s.xml">
-      <configuration name="py.test for test_xueqiu.testXueqiu.test_sign_in" configurationId="tests" />
-    </history-entry>
-    <history-entry file="py_test_for_test_xueqiu_testXueqiu_test_sign_in - 2019.03.05 at 15h 36m 50s.xml">
-      <configuration name="py.test for test_xueqiu.testXueqiu.test_sign_in" configurationId="tests" />
-    </history-entry>
     <history-entry file="py_test_for_test_xueqiu_testXueqiu_test_sign_in - 2019.03.05 at 15h 39m 42s.xml">
+      <configuration name="py.test for test_xueqiu.testXueqiu.test_sign_in" configurationId="tests" />
+    </history-entry>
+    <history-entry file="py_test_for_test_xueqiu_testXueqiu_test_sign_in - 2019.03.05 at 17h 27m 01s.xml">
+      <configuration name="py.test for test_xueqiu.testXueqiu.test_sign_in" configurationId="tests" />
+    </history-entry>
+    <history-entry file="py_test_for_test_xueqiu_testXueqiu_test_sign_in - 2019.03.05 at 17h 54m 17s.xml">
+      <configuration name="py.test for test_xueqiu.testXueqiu.test_sign_in" configurationId="tests" />
+    </history-entry>
+    <history-entry file="py_test_for_test_xueqiu_testXueqiu_test_sign_in - 2019.03.05 at 17h 56m 07s.xml">
+      <configuration name="py.test for test_xueqiu.testXueqiu.test_sign_in" configurationId="tests" />
+    </history-entry>
+    <history-entry file="py_test_for_test_xueqiu_testXueqiu_test_sign_in - 2019.03.05 at 17h 57m 07s.xml">
+      <configuration name="py.test for test_xueqiu.testXueqiu.test_sign_in" configurationId="tests" />
+    </history-entry>
+    <history-entry file="py_test_for_test_xueqiu_testXueqiu_test_sign_in - 2019.03.05 at 18h 00m 36s.xml">
+      <configuration name="py.test for test_xueqiu.testXueqiu.test_sign_in" configurationId="tests" />
+    </history-entry>
+    <history-entry file="py_test_for_test_xueqiu_testXueqiu_test_sign_in - 2019.03.05 at 18h 07m 10s.xml">
+      <configuration name="py.test for test_xueqiu.testXueqiu.test_sign_in" configurationId="tests" />
+    </history-entry>
+    <history-entry file="py_test_for_test_xueqiu_testXueqiu_test_sign_in - 2019.03.05 at 18h 08m 31s.xml">
+      <configuration name="py.test for test_xueqiu.testXueqiu.test_sign_in" configurationId="tests" />
+    </history-entry>
+    <history-entry file="py_test_for_test_xueqiu_testXueqiu_test_sign_in - 2019.03.05 at 18h 11m 45s.xml">
+      <configuration name="py.test for test_xueqiu.testXueqiu.test_sign_in" configurationId="tests" />
+    </history-entry>
+    <history-entry file="py_test_for_test_xueqiu_testXueqiu_test_sign_in - 2019.03.05 at 18h 12m 27s.xml">
       <configuration name="py.test for test_xueqiu.testXueqiu.test_sign_in" configurationId="tests" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
     <frame x="853" y="6" width="960" height="1040" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2494577" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32893288" sideWeight="0.5043384" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32929516" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.34471366" sideWeight="0.49566162" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.34471366" sideWeight="0.49566162" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32048458" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32048458" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329718" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
@@ -295,11 +315,21 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="1" />
+      <option name="time" value="2" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/test_xueqiu.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#21#49#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/test_xueqiu.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="190">
@@ -322,9 +352,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="494">
           <caret line="31" column="91" lean-forward="false" selection-start-line="31" selection-start-column="91" selection-end-line="31" selection-end-column="91" />
-          <folding>
-            <element signature="e#16#49#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -350,9 +377,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="342">
           <caret line="23" column="0" lean-forward="true" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
-          <folding>
-            <element signature="e#16#49#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -393,13 +417,6 @@
           <folding>
             <element signature="e#21#49#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/selenium/webdriver/remote/webdriver.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="193">
-          <caret line="361" column="8" lean-forward="false" selection-start-line="361" selection-start-column="8" selection-end-line="361" selection-end-column="8" />
         </state>
       </provider>
     </entry>
@@ -414,32 +431,53 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="456">
           <caret line="24" column="23" lean-forward="false" selection-start-line="24" selection-start-column="23" selection-end-line="24" selection-end-column="23" />
-          <folding>
-            <element signature="e#16#49#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/appium/webdriver/webdriver.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="19">
-          <caret line="177" column="0" lean-forward="false" selection-start-line="177" selection-start-column="0" selection-end-line="177" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$USER_HOME$/.PyCharmCE2017.3/system/python_stubs/892954608/builtins.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="188">
-          <caret line="3613" column="8" lean-forward="false" selection-start-line="3613" selection-start-column="8" selection-end-line="3613" selection-end-column="8" />
+        <state relative-caret-position="196">
+          <caret line="3601" column="8" lean-forward="false" selection-start-line="3601" selection-start-column="8" selection-end-line="3601" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/appium/webdriver/common/touch_action.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="291">
+          <caret line="121" column="26" lean-forward="false" selection-start-line="121" selection-start-column="26" selection-end-line="121" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/appium/webdriver/extensions/action_helpers.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="424">
+          <caret line="114" column="24" lean-forward="true" selection-start-line="114" selection-start-column="24" selection-end-line="114" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/selenium/webdriver/remote/webdriver.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="196">
+          <caret line="1096" column="8" lean-forward="false" selection-start-line="1096" selection-start-column="8" selection-end-line="1096" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/appium/webdriver/webdriver.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="220" column="8" lean-forward="false" selection-start-line="220" selection-start-column="8" selection-end-line="220" selection-end-column="8" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test_xueqiu.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="314">
-          <caret line="78" column="19" lean-forward="true" selection-start-line="78" selection-start-column="19" selection-end-line="78" selection-end-column="19" />
+        <state relative-caret-position="361">
+          <caret line="94" column="27" lean-forward="true" selection-start-line="94" selection-start-column="27" selection-end-line="94" selection-end-column="27" />
           <folding>
             <element signature="e#21#49#0" expanded="true" />
           </folding>
