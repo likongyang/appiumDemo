@@ -20,7 +20,7 @@ class testXueqiu(unittest.TestCase):
         # if load == True:
         #     caps["noReset"] = "true"
         self.driver = webdriver.Remote("http://localhost:4723/wd/hub", caps)
-        self.driver.implicitly_wait(10)
+        self.driver.implicitly_wait(8)
         load = True
 
     def loaded(self):
@@ -70,30 +70,53 @@ class testXueqiu(unittest.TestCase):
         print(self.driver.get_window_size())
         width = self.driver.get_window_size()['width']
         height = self.driver.get_window_size()['height']
+        pgs = ["a", "a"]
         if director == "up":
             while len(self.driver.find_elements(item['by'], item['value'])) < 1:
                 self.driver.swipe(width / 2, height * 3/4, width / 2, height / 4, 1000)
+                pgs[0] = self.driver.page_source
+                if pgs[0] == pgs[1]:
+                    return print("can't not find your elment")
+                else:
+                    pgs[1] = pgs[0]
             return self.driver.find_element(item['by'], item['value'])
 
         elif director == "down":
             while len(self.driver.find_elements(item['by'], item['value'])) < 1:
                 self.driver.swipe(width / 2, height / 4, width / 2, height * 3/4, 1000)
+                pgs[0] = self.driver.page_source
+                if pgs[0] == pgs[1]:
+                    return print("can't not find your elment")
+                else:
+                    pgs[1] = pgs[0]
             return self.driver.find_element(item['by'], item['value'])
 
 
         elif director == "left":
             while len(self.driver.find_elements(item['by'], item['value'])) < 1:
                 self.driver.swipe(width * 9/10, height / 2, width / 10, height / 2, 1000)
+                pgs[0] = self.driver.page_source
+                if pgs[0] == pgs[1]:
+                    return print("can't not find your elment")
+                else:
+                    pgs[1] = pgs[0]
             return self.driver.find_element(item['by'], item['value'])
 
         else:
             while len(self.driver.find_elements(item['by'], item['value'])) < 1:
                 self.driver.swipe(width / 4, height / 2, width * 3/4, height / 2, 1000)
+                pgs[0] = self.driver.page_source
+                if pgs[0] == pgs[1]:
+                    return print("can't not find your elment")
+                else:
+                    pgs[1] = pgs[0]
             return self.driver.find_element(item['by'], item['value'])
+
+
 
     # 交易 -> 基金 -> 已有蛋卷基金账户登录 -> 使用密码登陆 -> 输入用户名密码 -> 登录
     def test_sign_in(self):
-        item = {"by":"xpath", "value":"//*[contains(@text, '铁公鸡金融')]"}
+        item = {"by":"xpath", "value":"//*[contains(@text, '什么鬼东西')]"}
         self.swipe_new(item, 'left')
         self.phoneNumber = 13512345678
         self.driver.find_element_by_xpath("//*[@text='交易' and contains(@resource-id, 'tab_name')]").click()
