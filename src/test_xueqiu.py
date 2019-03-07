@@ -65,69 +65,131 @@ class testXueqiu(unittest.TestCase):
             assert elText.text == "阿里巴巴"
 
 
+    # # 封装一个滚动方法，swipe(item, director) return element
+    # def swipe_new(self, item, director):
+    #     print(self.driver.get_window_size())
+    #     width = self.driver.get_window_size()['width']
+    #     height = self.driver.get_window_size()['height']
+    #     pgs = ["a", "a"]
+    #     if director == "up":
+    #         while len(self.driver.find_elements(item['by'], item['value'])) < 1:
+    #             self.driver.swipe(width / 2, height * 3/4, width / 2, height / 4, 1000)
+    #             pgs[0] = self.driver.page_source
+    #             if pgs[0] == pgs[1]:
+    #                 return print("can't not find your elment")
+    #             else:
+    #                 pgs[1] = pgs[0]
+    #         return self.driver.find_element(item['by'], item['value'])
+    #
+    #     elif director == "down":
+    #         while len(self.driver.find_elements(item['by'], item['value'])) < 1:
+    #             self.driver.swipe(width / 2, height / 4, width / 2, height * 3/4, 1000)
+    #             pgs[0] = self.driver.page_source
+    #             if pgs[0] == pgs[1]:
+    #                 return print("can't not find your elment")
+    #             else:
+    #                 pgs[1] = pgs[0]
+    #         return self.driver.find_element(item['by'], item['value'])
+    #
+    #
+    #     elif director == "left":
+    #         while len(self.driver.find_elements(item['by'], item['value'])) < 1:
+    #             self.driver.swipe(width * 9/10, height / 2, width / 10, height / 2, 1000)
+    #             pgs[0] = self.driver.page_source
+    #             if pgs[0] == pgs[1]:
+    #                 return print("can't not find your elment")
+    #             else:
+    #                 pgs[1] = pgs[0]
+    #         return self.driver.find_element(item['by'], item['value'])
+    #
+    #     else:
+    #         while len(self.driver.find_elements(item['by'], item['value'])) < 1:
+    #             self.driver.swipe(width / 4, height / 2, width * 3/4, height / 2, 1000)
+    #             pgs[0] = self.driver.page_source
+    #             if pgs[0] == pgs[1]:
+    #                 return print("can't not find your elment")
+    #             else:
+    #                 pgs[1] = pgs[0]
+    #         return self.driver.find_element(item['by'], item['value'])
+
+
     # 封装一个滚动方法，swipe(item, director) return element
-    def swipe_new(self, item, director):
+    def swipe_new(self, targetElement, director):
         print(self.driver.get_window_size())
         width = self.driver.get_window_size()['width']
         height = self.driver.get_window_size()['height']
-        pgs = ["a", "a"]
+        pgs = ["", ""]
+
+        #向上滑动并查找指定的元素
         if director == "up":
-            while len(self.driver.find_elements(item['by'], item['value'])) < 1:
+            while len(self.driver.find_elements(targetElement['by'], targetElement['value'])) < 1:
                 self.driver.swipe(width / 2, height * 3/4, width / 2, height / 4, 1000)
+                #判断是否滑动到底，如果是则返回None，如果不是则返回当前页面为第二次准备作比较
                 pgs[0] = self.driver.page_source
                 if pgs[0] == pgs[1]:
-                    return print("can't not find your elment")
+                    return None
                 else:
                     pgs[1] = pgs[0]
-            return self.driver.find_element(item['by'], item['value'])
+            return self.driver.find_element(targetElement['by'], targetElement['value'])      #返回指定元素
 
+        # 向下滑动并查找指定的元素
         elif director == "down":
-            while len(self.driver.find_elements(item['by'], item['value'])) < 1:
+            while len(self.driver.find_elements(targetElement['by'], targetElement['value'])) < 1:
                 self.driver.swipe(width / 2, height / 4, width / 2, height * 3/4, 1000)
                 pgs[0] = self.driver.page_source
                 if pgs[0] == pgs[1]:
-                    return print("can't not find your elment")
+                    return None
                 else:
                     pgs[1] = pgs[0]
-            return self.driver.find_element(item['by'], item['value'])
+            return self.driver.find_element(targetElement['by'], targetElement['value'])
 
-
+        # 向左滑动并查找指定的元素
         elif director == "left":
-            while len(self.driver.find_elements(item['by'], item['value'])) < 1:
+            while len(self.driver.find_elements(targetElement['by'], targetElement['value'])) < 1:
                 self.driver.swipe(width * 9/10, height / 2, width / 10, height / 2, 1000)
                 pgs[0] = self.driver.page_source
                 if pgs[0] == pgs[1]:
-                    return print("can't not find your elment")
+                    return None
                 else:
                     pgs[1] = pgs[0]
-            return self.driver.find_element(item['by'], item['value'])
+            return self.driver.find_element(targetElement['by'], targetElement['value'])
 
-        else:
-            while len(self.driver.find_elements(item['by'], item['value'])) < 1:
+        # 向右滑动并查找指定的元素
+        elif director == "right":
+            while len(self.driver.find_elements(targetElement['by'], targetElement['value'])) < 1:
                 self.driver.swipe(width / 4, height / 2, width * 3/4, height / 2, 1000)
                 pgs[0] = self.driver.page_source
                 if pgs[0] == pgs[1]:
-                    return print("can't not find your elment")
+                    return None
                 else:
                     pgs[1] = pgs[0]
-            return self.driver.find_element(item['by'], item['value'])
+            return self.driver.find_element(targetElement['by'], targetElement['value'])
+
+        else:
+            print("输入有误!")
+            return None
 
 
 
     # 交易 -> 基金 -> 已有蛋卷基金账户登录 -> 使用密码登陆 -> 输入用户名密码 -> 登录
     def test_sign_in(self):
-        item = {"by":"xpath", "value":"//*[contains(@text, '什么鬼东西')]"}
-        self.swipe_new(item, 'left')
         self.phoneNumber = 13512345678
         self.driver.find_element_by_xpath("//*[@text='交易' and contains(@resource-id, 'tab_name')]").click()
-        self.driver.find_element_by_accessibility_id("15da75b0b27c24f3fee84026").click()
-        self.driver.find_element_by_accessibility_id("已有蛋卷基金账户登录").click()
-        self.driver.find_element_by_accessibility_id("使用密码登录").click()
-        self.driver.find_element_by_accessibility_id("请输入手机号").send_keys(self.phoneNumber)
-        self.driver.find_element_by_xpath("//*[contains(@content-desc, '登录密码')]/following-sibling::android.widget.EditText").send_keys("123456")
-        self.driver.find_element_by_xpath("//*[contains(@content-desc, '登录密码')]/following-sibling::android.widget.EditText").click()
-        self.driver.find_element_by_accessibility_id("安全登录").click()
-        assert 1 == len(self.driver.find_elements_by_xpath("//*[contains(@text, '错误')]"))
 
+        #emulator
+        #self.driver.find_element_by_accessibility_id("15da75b0b27c24f3fee84026").click()
+        #self.driver.find_element_by_accessibility_id("已有蛋卷基金账户登录").click()
+        # self.driver.find_element_by_accessibility_id("使用密码登录").click()
+        # self.driver.find_element_by_accessibility_id("请输入手机号").send_keys(self.phoneNumber)
+        # self.driver.find_element_by_xpath("//*[contains(@content-desc, '登录密码')]/following-sibling::android.widget.EditText").send_keys("123456")
+        # self.driver.find_element_by_xpath("//*[contains(@content-desc, '登录密码')]/following-sibling::android.widget.EditText").click()
+        # self.driver.find_element_by_accessibility_id("安全登录").click()
 
-
+        #mobile phone
+        self.driver.find_element_by_xpath("//*[@text='15da75b0b27c24f3fee84026']").click()
+        self.driver.find_element_by_xpath("//*[@text='已有蛋卷基金账户登录']").click()
+        self.driver.find_element_by_xpath("//*[@text='使用密码登录']").click()
+        self.driver.find_element_by_xpath("//*[@text='手机号']/following-sibling::android.widget.EditText").send_keys(self.phoneNumber)
+        self.driver.find_element_by_xpath("//*[@text='登录密码']/following-sibling::android.widget.EditText").send_keys("123456")
+        self.driver.find_element_by_xpath("//*[@text='安全登录']").click()
+        assert 1 == len(self.driver.find_elements_by_xpath("//*[contains(@text, '误')]"))

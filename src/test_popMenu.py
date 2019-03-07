@@ -32,3 +32,58 @@ class test_popmenu(unittest.TestCase):
         print(self.driver.find_element_by_xpath("//*[@class='android.widget.Toast']").text)
 
 
+    # # 封装一个滚动方法，swipe(item, director) return element
+    # def swipe_new(self, item, director):
+    #     print(self.driver.get_window_size())
+    #     width = self.driver.get_window_size()['width']
+    #     height = self.driver.get_window_size()['height']
+    #     pgs = ["a", "a"]
+    #
+    #     #向上滑动并查找指定的元素
+    #     if director == "up":
+    #         while len(self.driver.find_elements(item['by'], item['value'])) < 1:
+    #             self.driver.swipe(width / 2, height * 3/4, width / 2, height / 4, 1000)
+    #             #判断是否滑动到底，如果是则返回None，如果不是则返回当前页面为第二次准备作比较
+    #             pgs[0] = self.driver.page_source
+    #             if pgs[0] == pgs[1]:
+    #                 return None
+    #             else:
+    #                 pgs[1] = pgs[0]
+    #         return self.driver.find_element(item['by'], item['value'])      #返回指定元素
+    #
+    #     # 向下滑动并查找指定的元素
+    #     elif director == "down":
+    #         while len(self.driver.find_elements(item['by'], item['value'])) < 1:
+    #             self.driver.swipe(width / 2, height / 4, width / 2, height * 3/4, 1000)
+    #             pgs[0] = self.driver.page_source
+    #             if pgs[0] == pgs[1]:
+    #                 return None
+    #             else:
+    #                 pgs[1] = pgs[0]
+    #         return self.driver.find_element(item['by'], item['value'])
+    #
+    #     # 向左滑动并查找指定的元素
+    #     elif director == "left":
+    #         while len(self.driver.find_elements(item['by'], item['value'])) < 1:
+    #             self.driver.swipe(width * 9/10, height / 2, width / 10, height / 2, 1000)
+    #             pgs[0] = self.driver.page_source
+    #             if pgs[0] == pgs[1]:
+    #                 return None
+    #             else:
+    #                 pgs[1] = pgs[0]
+    #         return self.driver.find_element(item['by'], item['value'])
+    #
+    #     # 向右滑动并查找指定的元素
+    #     elif director == "right":
+    #         while len(self.driver.find_elements(item['by'], item['value'])) < 1:
+    #             self.driver.swipe(width / 4, height / 2, width * 3/4, height / 2, 1000)
+    #             pgs[0] = self.driver.page_source
+    #             if pgs[0] == pgs[1]:
+    #                 return None
+    #             else:
+    #                 pgs[1] = pgs[0]
+    #         return self.driver.find_element(item['by'], item['value'])
+    #
+    #     else:
+    #         print("输入有误!")
+    #         return None
